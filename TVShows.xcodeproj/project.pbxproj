@@ -13,9 +13,13 @@
 		CAF2244B2540F217000A05BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF224492540F217000A05BF /* Main.storyboard */; };
 		CAF2244D2540F218000A05BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF2244C2540F218000A05BF /* Assets.xcassets */; };
 		CAF224502540F218000A05BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF2244E2540F218000A05BF /* LaunchScreen.storyboard */; };
+		DD458D48A6DB99C61FB8339A /* libPods-TVShows.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4536CE324FACFA06AA8DA5 /* libPods-TVShows.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09AA74832EC966BF37858392 /* Pods-TVShows.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShows.release.xcconfig"; path = "Target Support Files/Pods-TVShows/Pods-TVShows.release.xcconfig"; sourceTree = "<group>"; };
+		9D306EFE1933A94F0C8C27F3 /* Pods-TVShows.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShows.debug.xcconfig"; path = "Target Support Files/Pods-TVShows/Pods-TVShows.debug.xcconfig"; sourceTree = "<group>"; };
+		9F4536CE324FACFA06AA8DA5 /* libPods-TVShows.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVShows.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF224402540F217000A05BF /* TVShows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF224432540F217000A05BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAF224452540F217000A05BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD458D48A6DB99C61FB8339A /* libPods-TVShows.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C73F8C57B76937999EAFD579 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D306EFE1933A94F0C8C27F3 /* Pods-TVShows.debug.xcconfig */,
+				09AA74832EC966BF37858392 /* Pods-TVShows.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CAF224372540F217000A05BF = {
 			isa = PBXGroup;
 			children = (
 				CAF224422540F217000A05BF /* TVShows */,
 				CAF224412540F217000A05BF /* Products */,
+				C73F8C57B76937999EAFD579 /* Pods */,
+				DD33868F652CD5576A0ADA96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +72,10 @@
 		CAF224422540F217000A05BF /* TVShows */ = {
 			isa = PBXGroup;
 			children = (
+				CAF224572543195A000A05BF /* Networking */,
+				CAF2245825431966000A05BF /* UI */,
+				CAF2245B25431988000A05BF /* Models */,
+				CAF224592543196F000A05BF /* ViewModels */,
 				CAF224432540F217000A05BF /* AppDelegate.swift */,
 				CAF224452540F217000A05BF /* SceneDelegate.swift */,
 				CAF224472540F217000A05BF /* ViewController.swift */,
@@ -67,6 +87,66 @@
 			path = TVShows;
 			sourceTree = "<group>";
 		};
+		CAF224572543195A000A05BF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CAF2245A25431981000A05BF /* Managers */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CAF2245825431966000A05BF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CAF2245D25431999000A05BF /* ViewControllers */,
+				CAF2245C25431992000A05BF /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CAF224592543196F000A05BF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CAF2245A25431981000A05BF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CAF2245B25431988000A05BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CAF2245C25431992000A05BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CAF2245D25431999000A05BF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DD33868F652CD5576A0ADA96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F4536CE324FACFA06AA8DA5 /* libPods-TVShows.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAF224542540F218000A05BF /* Build configuration list for PBXNativeTarget "TVShows" */;
 			buildPhases = (
+				C6D9976DF51DFB3009470EE6 /* [CP] Check Pods Manifest.lock */,
 				CAF2243C2540F217000A05BF /* Sources */,
 				CAF2243D2540F217000A05BF /* Frameworks */,
 				CAF2243E2540F217000A05BF /* Resources */,
@@ -132,6 +213,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C6D9976DF51DFB3009470EE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVShows-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CAF2243C2540F217000A05BF /* Sources */ = {
@@ -282,6 +388,7 @@
 		};
 		CAF224552540F218000A05BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D306EFE1933A94F0C8C27F3 /* Pods-TVShows.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +406,7 @@
 		};
 		CAF224562540F218000A05BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09AA74832EC966BF37858392 /* Pods-TVShows.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
